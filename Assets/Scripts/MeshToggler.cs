@@ -1,16 +1,23 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class MeshToggler : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    public GameObject TurbineObject;
+    private bool isActive = true;
 
-    // Update is called once per frame
-    void Update()
+    public void Toggle()
     {
-        
+        if (isActive)
+        {
+            TurbineObject.SetActive(false);
+            isActive = false;
+        }
+        else
+        {
+            TurbineObject.SetActive(true);
+            isActive = true;
+        }
     }
 }

@@ -119,6 +119,42 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &11882360 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4130636090814684028, guid: 33382e2f12748014eb036662879608f7, type: 3}
+  m_PrefabInstance: {fileID: 1385879593}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &11882362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 11882360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ec5818eee963441fa2483d5af5c01ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TurbineObject: {fileID: 11882360}
+--- !u!1 &20539071 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3789342686322580202, guid: 33382e2f12748014eb036662879608f7, type: 3}
+  m_PrefabInstance: {fileID: 1385879593}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &20539073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 20539071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ec5818eee963441fa2483d5af5c01ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TurbineObject: {fileID: 20539071}
 --- !u!1 &93509455 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4130636091378238737, guid: 33382e2f12748014eb036662879608f7, type: 3}
@@ -329,7 +365,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 620156033}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 11882362}
+        m_TargetAssemblyTypeName: MeshToggler, Assembly-CSharp
+        m_MethodName: Toggle
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &620156033
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -684,7 +732,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 915902586}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 20539073}
+        m_TargetAssemblyTypeName: MeshToggler, Assembly-CSharp
+        m_MethodName: Toggle
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &915902586
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -723,6 +783,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 915902583}
   m_CullTransparentMesh: 1
+--- !u!1 &954207567 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2321205324330158573, guid: 33382e2f12748014eb036662879608f7, type: 3}
+  m_PrefabInstance: {fileID: 1385879593}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &954207569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 954207567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ec5818eee963441fa2483d5af5c01ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TurbineObject: {fileID: 954207567}
 --- !u!1 &1125502584
 GameObject:
   m_ObjectHideFlags: 0
@@ -860,6 +938,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1125502584}
   m_CullTransparentMesh: 1
+--- !u!1 &1176230027 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4588645117189801135, guid: 33382e2f12748014eb036662879608f7, type: 3}
+  m_PrefabInstance: {fileID: 1385879593}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1176230029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1176230027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d49e8c20bbe1b43bd989d02493b9b94f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DistanceFromCamera: 2
+  PositionOnStart: 1
+  FollowCamera: 0
 --- !u!1 &1254957473
 GameObject:
   m_ObjectHideFlags: 0
@@ -1166,9 +1264,24 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4588645117189801135, guid: 33382e2f12748014eb036662879608f7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1176230029}
     - targetCorrespondingSourceObject: {fileID: 4130636091378238737, guid: 33382e2f12748014eb036662879608f7, type: 3}
       insertIndex: -1
       addedObject: {fileID: 93509457}
+    - targetCorrespondingSourceObject: {fileID: 2321205324330158573, guid: 33382e2f12748014eb036662879608f7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 954207569}
+    - targetCorrespondingSourceObject: {fileID: 4130636090814684028, guid: 33382e2f12748014eb036662879608f7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 11882362}
+    - targetCorrespondingSourceObject: {fileID: 4130636091631564930, guid: 33382e2f12748014eb036662879608f7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2112429974}
+    - targetCorrespondingSourceObject: {fileID: 3789342686322580202, guid: 33382e2f12748014eb036662879608f7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 20539073}
   m_SourcePrefab: {fileID: 100100000, guid: 33382e2f12748014eb036662879608f7, type: 3}
 --- !u!1 &1532995983
 GameObject:
@@ -1389,7 +1502,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1741790536}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 954207569}
+        m_TargetAssemblyTypeName: MeshToggler, Assembly-CSharp
+        m_MethodName: Toggle
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1741790536
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1510,7 +1635,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1839186098}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2112429974}
+        m_TargetAssemblyTypeName: MeshToggler, Assembly-CSharp
+        m_MethodName: Toggle
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1839186098
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1654,6 +1791,24 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &2112429972 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4130636091631564930, guid: 33382e2f12748014eb036662879608f7, type: 3}
+  m_PrefabInstance: {fileID: 1385879593}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2112429974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2112429972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ec5818eee963441fa2483d5af5c01ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TurbineObject: {fileID: 2112429972}
 --- !u!1 &2143640615
 GameObject:
   m_ObjectHideFlags: 0
